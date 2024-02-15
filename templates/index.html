@@ -1,18 +1,18 @@
 <!DOCKTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <div class="">
-                <img src="itmo_logo.png" class="itmo_img">
+                <img src="{{ url_for('static', filename='images/itmo_logo.png') }}" class="itmo_img">
             </div>
         </header>
         <div class="main">
             <div class="main_left">
-                <img src="me.jpg" class="me_img">
+                <img src="{{ url_for('static', filename='images/me.jpg') }}" class="me_img">
             </div>
             <div class="main_right">
                 <div class="main_right_name">
